@@ -1,0 +1,156 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>주성엔지니어링</title>
+
+  <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+  <link rel="apple-touch-startup-image" href="startup.png">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sub_common.css">
+  <link rel="stylesheet" href="./css/sub2css/sub2_1.css">
+  <script src="https://kit.fontawesome.com/e67abfe1c6.js" crossorigin="anonymous"></script>
+  <script src="./js/prefixfree.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <script src="./js/prefixfree.min.js"></script>
+
+
+  <script>
+    // <![CDATA[
+    try {
+      window.addEventListener('load', function () {
+        setTimeout(scrollTo, 0, 0, 1);
+      }, false);
+    } catch (e) {}
+    // ]]>
+  </script>
+
+</head>
+
+<body>
+
+  <? include "./header.html" ?>
+
+
+    <article id="content">
+      <div class="sub_layout">
+        <div class="main">
+          <img src="./images/visual_sub2.png" alt="">
+          <h3>제품소개 <span>Product</span></h3>
+        </div>
+        <div class="sub_menu">
+          <h2>
+            <a href="#" class="menu_open_btn">디스플레이장비</a>
+            <span class="notice hidden">
+            </span>
+            <i id="sub_menu_icon" class="fa-solid fa-plus"></i>
+          </h2>
+          <ul>
+            <li><a href="./sub2_1.html">반도체장비</a></li>
+            <li><a href="./sub2_2.html">디스플레이장비</a></li>
+            <li><a href="./sub2_3.html">태양광장비</a></li>
+            <li><a href="./product/list.php">제품검색</a></li>
+          </ul>
+        </div>
+        <div class="title_area">
+          <strong class="slogan">
+            생산의 핵심인 <span>품질, 시간, 기술</span>을 선도합니다.
+          </strong>
+        </div>
+      </div>
+
+      <div class="spy" draggable="true">
+        <a draggable="true" class="close_btn" href="#"><span class="hidden">메뉴닫기</span><i class="fa-solid fa-xmark"></i></a>
+        <div draggable="true" class="spy_list">
+          <ul draggable="true"> 
+            <li><a draggable="true" href="#">OLED</a></li>
+            <li><a draggable="true" href="#">IGZO</a></li>
+            <li><a draggable="true" href="#">PE CVD</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product">
+        <ul>
+          <li>
+            <h4>OLED Encapsulation(CVD&ALD)</h4>
+            <div class="img_box">
+              <img src="./images/sub2_2/product1.jpg" alt="">
+            </div>
+            <div class="text_area">
+              <p>대면적 봉지에 적합한 CVD/ALD 겸용 봉지 시스템</p>
+              <p>플라즈마로 인한 기판 손상 없이 300도 이하의 저온에서 우수한 최고의 막질을 균일하게 형성</p>
+              <p>Damage Zero의 신개념 플라즈마 기술</p>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+          <li>
+            <h4>IGZO MOCVD</h4>
+            <div class="img_box">
+              <img src="./images/sub2_2/product2.jpg" alt="">
+            </div>
+            <div class="text_area">
+              <p>Source(In, Ga, Zn)의 비율 조절 가능</p>
+              <p>이동도(Mobility) 90 이상</p>
+              <p>세계 최초 CVD방식의 IGZO 장비</p>
+              <p>세계 최고 Mobility</p>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+          <li>
+            <h4>PE CVD</h4>
+            <div class="img_box">
+              <img src="./images/sub2_2/product3.jpg" alt="">
+            </div>
+            <div class="text_area">
+              <p>온도 및 가스 분사 제어</p>
+              <p>낮은 이물 제어</p>
+              <p>우수한 막질 균일도</p>
+              <a href="#">자세히보기</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="modal">
+        <div class="pop_modal_box">
+          <div class="pop_top">
+            <p>Product List</p>
+            <a class="popCloseBtn" href="#"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></a>
+          </div>
+          <div class="modal_text">
+
+          </div>
+          <div class="modal_btn_box">
+            <ul class="modal_btn">
+              <li><a class="modal_perv" href="#"><span class="hidden">이전</span><i class="fa-solid fa-angle-left"></i></a></li>
+              <li><a class="modal_next" href="#"><span class="hidden">다음</span><i class="fa-solid fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </article>
+
+    <? include "./footer.html" ?>
+
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/subcommon.js"></script>
+  <script src="./js/sub2_2.js"></script>
+
+</body>
+
+</html>
