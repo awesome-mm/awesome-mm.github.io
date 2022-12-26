@@ -9,11 +9,19 @@
   font-weight: normal;
   font-style: normal;
 }
-html{font-size: 16px; scroll-behavior: smooth;}
+html{font-size: 16px; scroll-behavior: smooth;
+  overflow: overlay;
+
+}
 body {
+  height: 100vh;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   color: #333;
+}
+#wrap{
+  height: 100vh;
+  overflow: hidden;
 }
 h1,h2,h3,h4{
   font-family: "Santana-Black",sans-serif;
@@ -727,6 +735,8 @@ h1 {
   background: #006f3f;
 }
 /* 와이드 pc */
+
+
 
 
 /* 일반pc */
