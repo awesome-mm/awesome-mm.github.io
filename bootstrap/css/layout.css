@@ -731,7 +731,7 @@ h1 {
 
 /* 일반pc */
 @media screen and (max-width:1200px) {
-  #content .about{padding: 0; padding-top: 100px;}
+  #content .about{padding-bottom: 50px; padding-top: 100px;}
 
   #content .coffee {
     padding: 0;
