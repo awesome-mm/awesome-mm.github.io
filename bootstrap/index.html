@@ -37,8 +37,8 @@
 
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example" data-offset="50" data-toggle="modal">
-	<div id="skipNav">
+<body data-spy="scroll" data-target="#navbar-example" data-offset="50" >
+	<div id="skipNav" data-toggle="modal">
 		<a href="#content">본문 바로가기</a>
 		<a href="#navbar">글로벌 네비게이션 바로가기</a>
 	</div>
@@ -708,6 +708,15 @@
 		});
 		$('.tooltip-hide').tooltip('hide');
 	</script>
+	
+	<script>
+		$('.more_box > .btn').click( (e) => {
+			$('body').toggleClass('modal-open');
+		}
+
+		)
+	</script>
+
 </body>
 
 </html>
