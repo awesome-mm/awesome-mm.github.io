@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   color: #333;
 }
-#wrap.modla-open{
+#wrap.modal-open{
   height: 100vh;
   overflow: hidden;
 }
